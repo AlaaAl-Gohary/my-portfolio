@@ -1,0 +1,58 @@
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e5672, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* النص الأساسي */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 .highlight {
+  color: #ffcc00;
+}
+
+/* كتابة متحركة (Typing effect) */
+.typing {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ffcc00;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* زرار */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ffcc00;
+  color: #222;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #e6b800;
+  transform: scale(1.1);
+}
